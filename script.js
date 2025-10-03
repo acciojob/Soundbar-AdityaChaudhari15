@@ -1,5 +1,5 @@
-//your JS code here. If required.
-const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong'];
+// Use the required sound names (files are expected in ./sounds/)
+const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong','stop'];
 
 const buttons = document.getElementById('buttons');
 
@@ -8,7 +8,7 @@ sounds.forEach((sound) => {
   // hidden audio element
   const audio = document.createElement('audio');
   audio.id = sound;
-  audio.src = ./sounds/${sound}.mp3;
+  audio.src = `./sounds/${sound}.mp3`;
   audio.preload = 'auto';
   document.body.appendChild(audio);
 
